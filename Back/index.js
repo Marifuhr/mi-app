@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes');
+const router = express.Router();
 
-app.use(routes);
+app.use(router);
 
 app.listen(3000, () => {
   console.log('Server running on port 3000');
